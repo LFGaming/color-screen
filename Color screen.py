@@ -11,8 +11,8 @@ s = ttk.Style()
 # Button functionality
 
 def get_spinbox_val():
-    global s
-    print(s.get())
+    global r
+    print(r.get())
 
 
 def red():
@@ -46,9 +46,9 @@ ttk.Frame(root, width=1000, height=500, style='Danger.TFrame').grid()
 spinbox = StringVar()
 #s = ttk.Spinbox(root, from_=1.0, to=100.0, textvariable=spinbox).grid(column=4, row=1, sticky=W)
 ttk.Label(root, text="Aantal Mensen:").grid(column=3, row=1, sticky=W)
-s = ttk.Spinbox(root, from_=1.0, to=100.0,
+r = ttk.Spinbox(root, from_=1.0, to=100.0,
                 textvariable=spinbox, command=get_spinbox_val)
-s.grid(column=4, row=1, sticky=W)
+r.grid(column=4, row=1, sticky=W)
 # print(s.get())
 
 
